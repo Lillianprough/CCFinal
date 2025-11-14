@@ -1,7 +1,4 @@
-Heading: Final
-Author: Lillian Prough
-
-This is the graph section of my final!! I chose to graph the wolf population in Yellowstone as it is Biology related, but still applicable to this class.
+#This is the graph section of my final!! I chose to graph the wolf population in Yellowstone as it is Biology related, but still applicable to this class.
 
 ```{python}
 import os
@@ -17,10 +14,10 @@ plt.xlabel("Year")
 plt.ylabel("Population")
 plt.title("Reintroduction of Wolves to Yellowstone Over Time")
 
-plt.show()
-plt.savefig("populationgraph.png")
+plt.savefig("populationgraph.svg")
+os.system("start populationgraph.svg")
 ```
-yapping
+#yapping
 
 ```{python}
 import numpy as np
@@ -39,7 +36,7 @@ df = pd.DataFrame(population)
 df.describe()
 df
 ```
-The equation below is the slope of the wolf population since 2000. This is not conclusive, since the rate is so slow and uneven that is just due to natural population shifts, not an actual shift in population. This shows that the wof population has stabilized.
+#The equation below is the slope of the wolf population since 2000. This is not conclusive, since the rate is so slow and uneven that is just due to natural population shifts, not an actual shift in population. This shows that the wof population has stabilized.
 ```{python}
 import sympy
 
