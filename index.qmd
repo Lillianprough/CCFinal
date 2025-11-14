@@ -12,23 +12,19 @@ years = [1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025]
 population = [0, 21, 119, 118, 97, 104, 123, 110] # Population
 
 plt.plot(years, population, marker='o', linestyle='-', color='skyblue')
-plt.savefig("populationgraph.svg")
 
 plt.xlabel("Year")
 plt.ylabel("Population")
 plt.title("Reintroduction of Wolves to Yellowstone Over Time")
 
 plt.show()
-
+plt.savefig("populationgraph.png")
 ```
 yapping
 
 ```{python}
-
 import numpy as np
 import pandas as pd
-
-
 population = np.array([
     [1990, 0],
     [1995, 21],
@@ -42,15 +38,13 @@ population = np.array([
 df = pd.DataFrame(population)
 df.describe()
 df
-
-
 ```
-#sympy stuff
+The equation below is the slope of the wolf population since 2000. This is not conclusive, since the rate is so slow and uneven that is just due to natural population shifts, not an actual shift in population. This shows that the wof population has stabilized.
 ```{python}
 import sympy
 
 x, y = sympy.symbols("x y")
-sympy.Eq(y, 2*x)
+sympy.Eq(y,-2.7*x + 119)
 ```
 ```{python}
 import subprocess # instead of os
