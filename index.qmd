@@ -1,6 +1,8 @@
-#matplotlib
-# This is the graph section of my final!! I chose to graph the wolf population in Yellowstone as it is Biology related, but still applicable to this class.
+Final
+Lillian Prough
 
+This is the graph section of my final!! I chose to graph the wolf population in Yellowstone as it is Biology related, but still applicable to this class.
+```{python}
 import matplotlib.pyplot as plt
 
 years = [1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025]
@@ -13,11 +15,10 @@ plt.ylabel("Population")
 plt.title("Reintroduction of Wolves to Yellowstone Over Time")
 
 plt.show()
+```
+yapping
 
-# pandas dataframe
-
-
-# pandas dataframe
+```{python}
 
 import numpy as np
 import pandas as pd
@@ -38,15 +39,15 @@ df.describe()
 df
 
 
-
+```
 #sympy stuff
-
+```{python}
 import sympy
 
 x, y = sympy.symbols("x y")
 sympy.Eq(y, 2*x)
-
-# word count
+```
+```{python}
 import subprocess # instead of os
-
+```
 
