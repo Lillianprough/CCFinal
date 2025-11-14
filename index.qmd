@@ -13,9 +13,8 @@ plt.plot(years, population, marker='o', linestyle='-', color='skyblue')
 plt.xlabel("Year")
 plt.ylabel("Population")
 plt.title("Reintroduction of Wolves to Yellowstone Over Time")
+plt.savefig("populationgraph.png")
 
-
-![(populationgraph.png)]
 
 ```
 Next is my pandas dataframe of the data in the graph. This helps to make the graph more clear, and provide the individual data points that the graph connects. This way the reader undertands both the relationship between the points and the individual points themselves. 
