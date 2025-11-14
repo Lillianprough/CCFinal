@@ -1,18 +1,18 @@
+``
 format:
   html:
     embed-resources: true
+``
 ---
 title: "Final"  
-author: "Lillian Prough"
 subtitle: "Thinking Machines"
 ---
-format:
-  html:
-    theme: flatly
+
+Lillian Prough
 
 This is the graph section of my final!! I chose to graph the wolf population in Yellowstone as it is Biology related, but still applicable to this class.
 
-```{python}
+``{python}
 import os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -28,12 +28,11 @@ plt.title("Reintroduction of Wolves to Yellowstone Over Time")
 plt.savefig('populationgraph.svg') 
 plt.show()
 os.system("start populationgraph.svg")
+``
 
-
-```
 Next is my pandas dataframe of the data in the graph. This helps to make the graph more clear, and provide the individual data points that the graph connects. This way the reader undertands both the relationship between the points and the individual points themselves. 
 
-```{python}
+``
 import numpy as np
 import pandas as pd
 population = np.array([
@@ -49,12 +48,12 @@ population = np.array([
 df = pd.DataFrame(population)
 df.describe()
 df
-```
+``
 The equation below is the slope of the wolf population since 2000. This is not conclusive, since the rate is so slow and uneven that is just due to natural population shifts, not an actual shift in population. This shows that the wolf population has stabilized.
-```{python}
+``
 import sympy
 x, y = sympy.symbols("x y")
 sympy.Eq(y,-2.7*x + 119)
-```
+``
 
 
