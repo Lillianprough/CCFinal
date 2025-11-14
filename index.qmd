@@ -1,4 +1,4 @@
-#This is the graph section of my final!! I chose to graph the wolf population in Yellowstone as it is Biology related, but still applicable to this class.
+This is the graph section of my final!! I chose to graph the wolf population in Yellowstone as it is Biology related, but still applicable to this class.
 
 ```{python}
 import os
@@ -14,7 +14,7 @@ plt.xlabel("Year")
 plt.ylabel("Population")
 plt.title("Reintroduction of Wolves to Yellowstone Over Time")
 plt.savefig("populationgraph.svg")
-os.system("start populationgraph.svg")
+![](populationgraph.svg)
 ```
 Next is my pandas dataframe of the data in the graph. This helps to make the graph more clear, and provide the individual data points that the graph connects. This way the reader undertands both the relationship between the points and the individual points themselves. 
 
@@ -45,3 +45,4 @@ sympy.Eq(y,-2.7*x + 119)
 import subprocess # instead of os
 ```
 
+I believe that scientific computing is useful due to the analytical benefits of it. 
