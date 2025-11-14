@@ -1,20 +1,25 @@
-Final
-Lillian Prough
+Heading: Final
+Author: Lillian Prough
 
 This is the graph section of my final!! I chose to graph the wolf population in Yellowstone as it is Biology related, but still applicable to this class.
+
 ```{python}
+import os
+import numpy as np
 import matplotlib.pyplot as plt
 
 years = [1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025]
 population = [0, 21, 119, 118, 97, 104, 123, 110] # Population
 
 plt.plot(years, population, marker='o', linestyle='-', color='skyblue')
+plt.savefig("populationgraph.svg")
 
 plt.xlabel("Year")
 plt.ylabel("Population")
 plt.title("Reintroduction of Wolves to Yellowstone Over Time")
 
 plt.show()
+
 ```
 yapping
 
