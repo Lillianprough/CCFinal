@@ -42,4 +42,4 @@ x, y = sympy.symbols("x y")
 sympy.Eq(y,-2.7*x + 119)
 ```
 
-I believe that scientific computing is useful due to the analytical benefits of it. 
+
