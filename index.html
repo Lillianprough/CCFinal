@@ -65,16 +65,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><code>format:   html:     embed-resources: true</code> — title: “Final”<br>
-subtitle: “Thinking Machines” —</p>
+<p>format: html: embed-resources: true</p>
 <p>Lillian Prough</p>
 <p>This is the graph section of my final!! I chose to graph the wolf population in Yellowstone as it is Biology related, but still applicable to this class.</p>
-<p>``{python} import os import numpy as np import matplotlib.pyplot as plt</p>
+<p>{python} import os import numpy as np import matplotlib.pyplot as plt</p>
 <p>years = [1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025] population = [0, 21, 119, 118, 97, 104, 123, 110] # Population</p>
 <p>plt.plot(years, population, marker=‘o’, linestyle=‘-’, color=‘skyblue’)</p>
-<p>plt.xlabel(“Year”) plt.ylabel(“Population”) plt.title(“Reintroduction of Wolves to Yellowstone Over Time”) plt.savefig(‘populationgraph.svg’) plt.show() os.system(“start populationgraph.svg”) ``</p>
+<p>plt.xlabel(“Year”) plt.ylabel(“Population”) plt.title(“Reintroduction of Wolves to Yellowstone Over Time”) plt.savefig(‘populationgraph.svg’) plt.show() os.system(“start populationgraph.svg”)</p>
 <p>Next is my pandas dataframe of the data in the graph. This helps to make the graph more clear, and provide the individual data points that the graph connects. This way the reader undertands both the relationship between the points and the individual points themselves.</p>
-<p><code>import numpy as np import pandas as pd population = np.array([     [1990, 0],     [1995, 21],     [2000, 119],     [2005, 118],     [2010, 97],     [2015, 104],     [2020, 123],     [2025, 110] ]) df = pd.DataFrame(population) df.describe() df</code> The equation below is the slope of the wolf population since 2000. This is not conclusive, since the rate is so slow and uneven that is just due to natural population shifts, not an actual shift in population. This shows that the wolf population has stabilized. <code>import sympy x, y = sympy.symbols("x y") sympy.Eq(y,-2.7*x + 119)</code></p>
+<p>import numpy as np import pandas as pd population = np.array([ [1990, 0], [1995, 21], [2000, 119], [2005, 118], [2010, 97], [2015, 104], [2020, 123], [2025, 110]]) df = pd.DataFrame(population) df.describe() df</p>
+<p>The equation below is the slope of the wolf population since 2000. This is not conclusive, since the rate is so slow and uneven that is just due to natural population shifts, not an actual shift in population. This shows that the wolf population has stabilized.</p>
+<p>import sympy x, y = sympy.symbols(“x y”) sympy.Eq(y,-2.7*x + 119)</p>
 
 </main>
 <!-- /main column -->
