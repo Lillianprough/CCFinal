@@ -14,6 +14,7 @@ plt.xlabel("Year")
 plt.ylabel("Population")
 plt.title("Reintroduction of Wolves to Yellowstone Over Time")
 os.system("start populationgraph.svg")
+populationgraph (1).svg
 
 ```
 Next is my pandas dataframe of the data in the graph. This helps to make the graph more clear, and provide the individual data points that the graph connects. This way the reader undertands both the relationship between the points and the individual points themselves. 
